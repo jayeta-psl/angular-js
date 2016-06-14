@@ -60,7 +60,7 @@ app.controller('CustomerController', ['$scope', '$http', 'ngTableParams', '$filt
             });
     }
 
-    //Update customer record
+    //Update a customer
     $scope.saveEdit = function () {
         var id = $scope.form.data.id;
         $http({
@@ -82,7 +82,7 @@ app.controller('CustomerController', ['$scope', '$http', 'ngTableParams', '$filt
             });
     }
 
-    //Delete a customer record
+    //Delete a customer
     $scope.remove = function (id) {
         var result = confirm("Are you sure to delete this customer?");
         if (result) {
